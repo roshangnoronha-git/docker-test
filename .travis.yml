@@ -8,4 +8,5 @@ before_install:
   - docker build -–t noronhaha/docker .
 
 script:
-  - docker run -e CI=true noronhaha/docker npm run test
+  - docker run  noronhaha/docker npm run test --coverage
+  
